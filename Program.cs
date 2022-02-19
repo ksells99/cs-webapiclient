@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace WebAPIClient
@@ -20,10 +22,20 @@ namespace WebAPIClient
             client.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
 
             // Fetch data from Github api
-            var stringTask = client.GetStringAsync("https://api.github.com/orgs/dotnet/repos");
+            
+            // var stringTask = client.GetStringAsync("https://api.github.com/orgs/dotnet/repos");
+            // var msg = await stringTask;
+            // Console.Write(msg);
 
-            var msg = await stringTask;
-            Console.Write(msg);
+            var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
+
+            // Deserialise json response into a list of objects containing only what is in Repository class (Repo.cs)
+            var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
+
+            foreach(Repository repo in repositories)
+            {
+                Console.WriteLine(repo.Name);
+            }
         }
         
         

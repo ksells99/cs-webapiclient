@@ -10,7 +10,9 @@ namespace WebAPIClient
     class Program
     {
         private static readonly HttpClient client = new HttpClient();
-        private static async Task ProcessRepositories()
+
+        // Returns a task whose result is a list of Repository objects
+        private static async Task<List<Repository>> ProcessRepositories()
         {
             // Set up HTTP headers
             client.DefaultRequestHeaders.Accept.Clear();
@@ -32,16 +34,21 @@ namespace WebAPIClient
             // Deserialise json response into a list of objects containing only what is in Repository class (Repo.cs)
             var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
 
-            foreach(Repository repo in repositories)
-            {
-                Console.WriteLine(repo.Name);
-            }
+
+            return repositories;
+
+
         }
         
         
         static async Task Main(string[] args)
         {
-            await ProcessRepositories();
+            var repositories = await ProcessRepositories();
+            
+            foreach(Repository repo in repositories)
+            {
+                Console.WriteLine(repo.Name);
+            }
         }
     }
 }

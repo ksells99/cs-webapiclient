@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "R60H+yuYwlqNn1Ji2BOFn16mHzLNf3tCMqCujh9hYF80QTRG0WPJTCRJBz+vHXlbKl7UPWfgT5V24Kunxw9WLw==",
+  "dgSpecHash": "Yb9N61jOpeNZrMaveNgCCfj2r8EWqwl1fPulQYDXQSYqYBPVg9GuymL2BElfhbwZmBvHp+l7BCSyqoJqt90KIQ==",
   "success": true,
   "projectFilePath": "D:\\Kai-2\\cs-webapiclient\\WebAPIClient\\WebAPIClient.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Kai\\.nuget\\packages\\pastel\\3.0.0\\pastel.3.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Pastel;
 
 namespace WebAPIClient
 {
@@ -34,20 +36,23 @@ namespace WebAPIClient
             // Deserialise json response into a list of objects containing only what is in Repository class (Repo.cs)
             var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
 
-
             return repositories;
-
-
         }
         
         
         static async Task Main(string[] args)
         {
             var repositories = await ProcessRepositories();
-            
+
             foreach(Repository repo in repositories)
             {
-                Console.WriteLine(repo.Name);
+                // Output to console - uses Pastel package to change text colour
+                Console.WriteLine(repo.Name.Pastel(Color.Black).PastelBg(Color.Yellow));
+                Console.WriteLine(repo.Description);
+                Console.WriteLine(repo.GitHubHomeUrl);
+                Console.WriteLine($"Last push: {repo.LastPush}");
+                Console.WriteLine($"{repo.Watchers} watchers".Pastel(Color.Cyan));
+                Console.WriteLine();
             }
         }
     }

@@ -1,0 +1,16 @@
+D:\Kai-2\cs-webapiclient\WebAPIClient\bin\Debug\net5.0\WebAPIClient.exe
+D:\Kai-2\cs-webapiclient\WebAPIClient\bin\Debug\net5.0\WebAPIClient.deps.json
+D:\Kai-2\cs-webapiclient\WebAPIClient\bin\Debug\net5.0\WebAPIClient.runtimeconfig.json
+D:\Kai-2\cs-webapiclient\WebAPIClient\bin\Debug\net5.0\WebAPIClient.runtimeconfig.dev.json
+D:\Kai-2\cs-webapiclient\WebAPIClient\bin\Debug\net5.0\WebAPIClient.dll
+D:\Kai-2\cs-webapiclient\WebAPIClient\bin\Debug\net5.0\ref\WebAPIClient.dll
+D:\Kai-2\cs-webapiclient\WebAPIClient\bin\Debug\net5.0\WebAPIClient.pdb
+D:\Kai-2\cs-webapiclient\WebAPIClient\obj\Debug\net5.0\WebAPIClient.csproj.AssemblyReference.cache
+D:\Kai-2\cs-webapiclient\WebAPIClient\obj\Debug\net5.0\WebAPIClient.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kai-2\cs-webapiclient\WebAPIClient\obj\Debug\net5.0\WebAPIClient.AssemblyInfoInputs.cache
+D:\Kai-2\cs-webapiclient\WebAPIClient\obj\Debug\net5.0\WebAPIClient.AssemblyInfo.cs
+D:\Kai-2\cs-webapiclient\WebAPIClient\obj\Debug\net5.0\WebAPIClient.csproj.CoreCompileInputs.cache
+D:\Kai-2\cs-webapiclient\WebAPIClient\obj\Debug\net5.0\WebAPIClient.dll
+D:\Kai-2\cs-webapiclient\WebAPIClient\obj\Debug\net5.0\ref\WebAPIClient.dll
+D:\Kai-2\cs-webapiclient\WebAPIClient\obj\Debug\net5.0\WebAPIClient.pdb
+D:\Kai-2\cs-webapiclient\WebAPIClient\obj\Debug\net5.0\WebAPIClient.genruntimeconfig.cache
